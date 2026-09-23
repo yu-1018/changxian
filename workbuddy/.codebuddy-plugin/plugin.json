@@ -1,0 +1,51 @@
+{
+  "name": "solo-loop",
+  "version": "3.0.0",
+  "description": "Turn long-horizon goals into unattended, resumable, rate-limit-resilient autonomous loops with disk-backed state and isolated subtasks.",
+  "author": {
+    "name": "yu-1018",
+    "email": "1994509750@qq.com"
+  },
+  "agents": ["./agents/solo-loop-driver.md"],
+  "expertType": "agent",
+  "agentName": "solo-loop-driver",
+  "skills": ["./skills/solo-loop"],
+  "displayName": {
+    "en": "SOLO-LOOP",
+    "zh": "长循环任务驱动器"
+  },
+  "profession": {
+    "en": "Long-Horizon Task Orchestrator",
+    "zh": "长循环任务编排专家"
+  },
+  "displayDescription": {
+    "en": "Decomposes a long-horizon goal into a task tree and drives it unattended: state on disk for resume-after-crash, isolated subtasks so context never explodes, automatic backoff and model fallback under rate limits.",
+    "zh": "把长期目标拆成任务树自动推进：状态落盘可续跑，子任务隔离执行不爆上下文，遇限流自动退避。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "04-DataAI",
+  "defaultInitPrompt": {
+    "zh": "把「整理日语N2语法成Anki卡组」跑成一个无人值守的长循环任务",
+    "en": "Run 'build an Anki deck for JLPT N2 grammar' as an unattended long-horizon loop"
+  },
+  "plugin": "solo-loop",
+  "tags": [
+    { "en": "Autonomous Loop", "zh": "长循环自治" },
+    { "en": "Task Decomposition", "zh": "任务拆解" },
+    { "en": "Rate Limit", "zh": "限流抗性" }
+  ],
+  "quickPrompts": [
+    { "zh": "把「整理日语N2语法成Anki卡组」跑成一个无人值守的长循环任务", "en": "Run 'build an Anki deck for JLPT N2 grammar' as an unattended long-horizon loop" },
+    { "zh": "用 solo-loop 自动拆解并推进我的内容生产项目", "en": "Use solo-loop to decompose and drive my content production project" },
+    { "zh": "解释 solo-loop 怎么做到断点续跑和抗限流", "en": "Explain how solo-loop survives restarts and rate limits" }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yu-1018/solo-loop",
+  "keywords": [
+    "long-horizon",
+    "autonomous-loop",
+    "task-decomposition",
+    "rate-limit",
+    "state-persistence"
+  ]
+}
