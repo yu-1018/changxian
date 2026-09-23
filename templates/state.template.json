@@ -1,0 +1,46 @@
+{
+  "schema": "solo-loop/state/v3",
+  "goal": "{{GOAL}}",
+  "createdAt": "{{NOW_ISO}}",
+  "updatedAt": null,
+  "status": "pending",
+  "budget": {
+    "maxTicks": 200,
+    "maxLeavesPerTick": 1,
+    "maxLeafMinutes": 15,
+    "maxRetries": 2,
+    "maxNoProgressTicks": 3,
+    "maxSubCallsPerLeaf": 8
+  },
+  "models": ["{{PRIMARY_MODEL}}", "{{FALLBACK_MODEL}}"],
+  "rateLimit": {
+    "cooldownUntil": null,
+    "count": 0,
+    "baseBackoffMs": 60000,
+    "maxBackoffMs": 1800000,
+    "jitterMs": 30000,
+    "lastModel": null,
+    "switches": 0
+  },
+  "cron": {
+    "jobId": null,
+    "removedAt": null
+  },
+  "cursor": {
+    "tick": 0,
+    "lastTickAt": null,
+    "noProgressStreak": 0
+  },
+  "nodes": [
+    {
+      "id": "0",
+      "kind": "goal",
+      "title": "{{GOAL_TITLE}}",
+      "deps": [],
+      "status": "ready",
+      "attempts": 0,
+      "children": []
+    }
+  ],
+  "log": []
+}

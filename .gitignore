@@ -1,0 +1,13 @@
+# solo-loop 运行时产物（不要提交）
+state.json
+PROGRESS.md
+DECISIONS.md
+REPORT.md
+cron-payload.json
+runs/
+artifacts/
+archive/
+
+# Python
+__pycache__/
+*.pyc
